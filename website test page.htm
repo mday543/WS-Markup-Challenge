@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<header>
+<!-- create heading image -->
+<img src="./assets/logo.png" alt="logo icon" class="center">
+</header>
+<body>
+
+<!-- navigation bar -->
+<div class="nav">
+ <a href="#cookware">COOKWARE</a>
+ <a href="#cookstools">COOKS' TOOLS</a>
+ <a href="#cutlery">CUTLERY</a>
+ <a href="#electricx">ELECTRICS</a>
+ <a href="#bakeware">BAKEWARE</a>
+ <a href="#food">FOOD</a>
+ <a href="#tabletopandbar">TABLETOP & BAR</a>
+ <a href="#homekeeping">HOMEKEEPING</a>
+ <a href="#outdoor">OUTDOOR</a>
+ <a href="#sale">SALE</a>
+ <a style="float: right; border-left: 1px solid #FFF; background-color: #191970" href="#williams-sonoma">WILLIAMS-SONOMA HOME</a>
+</div>
+
+<!-- adding website navigation -->
+<div class="websiteNavigation">
+ <a href="#home">Home</a> >
+ <a href="#homekeeping">Homekeeping</a> >
+ <a href="#aprons">Aprons</a> >
+ <a href="#adultaprons">Adult Aprons</a> >
+ <a href="#williamfrenchblue">Williams-Sonoma Classic Apron, French Blue</a>
+</div>
+
+<!-- add left column for preview picture and thumbnail pictures -->
+<div class="columnContainer">
+ <div class="row">
+  <div class="leftColumn">
+   <div class="previewImage">
+    <img src="./assets/product-large-a.jpg" alt="largeimaga">
+   </div>
+   <div class="previewImage">
+    <img src="./assets/product-large-b.jpg" alt="largeimagb">
+   </div>
+   <div class="previewImage">
+    <img src="./assets/product-large-c.jpg" alt="largeimagc">
+   </div>
+   <div class="previewImage">
+    <img src="./assets/product-large-d.jpg" alt="largeimagd">
+   </div>
+
+   <div class="columnQuarter thumbnail img cursor">
+    <img src="./assets/product-small-a.jpg" alt="smallimaga" onclick="activeImage(1)">
+   </div>
+   <div class="columnQuarter thumbnail img cursor">
+    <img src="./assets/product-small-b.jpg" alt="smallimagb" onclick="activeImage(2)">
+   </div>
+   <div class="columnQuarter thumbnail img cursor">
+    <img src="./assets/product-small-c.jpg" alt="smallimagc" onclick="activeImage(3)">
+   </div>
+   <div class="columnQuarter thumbnail img cursor">
+    <img src="./assets/product-small-d.jpg" alt="smallimagd" onclick="activeImage(4)">
+   </div>
+  </div>
+  
+  <!-- add right column for item description, quantity box, add to cart button, and collapsable boxes -->
+  <div class="rightColumn">
+   <h>Williams-Sonoma Classic Apron, French Blue</h>
+   <p>A generously sized apron is a necessity in any kitchen, and ours will brighten yours with lively color. Sewn of thick cotton, it can be personalized or monogrammed with up to nine characters, all the same height, embroidered in your choice of color. An apron of this quality makes a welcome gift to any cook</p>
+   <li>Durable 100% cotton construction.</li>
+   <li>Adjustable neckband ensures a good fit.</li>
+   <li>Roomy front pockets hold small tooks.</li>
+   <li>Machine-wash.</li>
+   <p style="font-size: 20px; font-weight: bold;">$19.95</p>
+   <form>
+    <input type="number" name="quantity" value="1" min="1" max="9">
+   </form>
+   <button class="addToCartButton" onclick="messageAlert()";>
+  </div>
+
+  <!-- add expandable buttons -->
+  <div class="rightColumn">
+   
+    <button class="expandButtonClosed">DESCRIPTION</button>
+    <div class="desciptionSection">
+     <p>A generously sized apron is a necessity in any kitchen, and ours will brighten yours with lively color. Sewn of thick cotton, it can be personalized or monogrammed with up to nine characters, all the same height, embroidered in your choice of color. An apron of this quality makes a welcome gift to any cook</p>
+      <li>Durable 100% cotton construction.</li>
+      <li>Adjustable neckband ensures a good fit.</li>
+      <li>Roomy front pockets hold small tooks.</li>
+      <li>Machine-wash.</li>
+    </div>
+    <button class="expandButtonClosed">DIMENSIONS & MORE INFO</button>
+    <div class="desciptionSection">
+     <li>27" wide, 36" long.</li>
+	 <li>Made in India</li>
+    </div>
+    <button class="expandButtonClosed">SHIPPING</button>
+    <div class="desciptionSection">
+     <p>Shipping infomation regarding shipping based in your area</p>
+    </div>
+   </div>
+  
+ </div>
+</div>
+
+<!-- call script functions -->
+<script src="scripts.js"></script>
+
+</body>
+
+<footer>
+
+<!-- adding footer links for website -->
+<div class="footerBar">
+ <a>© 2016 Williams-Sonoma Inc., All Rights Reserved |</a>
+ <a href="#termsAndConditions">Terms and Conditions (Updated March 2016) |<a>
+ <a href="#privacyPolicy">Privacy Policy |</a>
+ <a href="#legalStatement">Legal Statement |</a>
+</div>
+
+</footer>
+</html>

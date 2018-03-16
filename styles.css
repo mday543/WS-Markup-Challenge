@@ -1,0 +1,190 @@
+/* set font family */
+*{
+	font-family: Flama-4n,Flama,Helvetica,Arial,sans-serif;
+	font-size: 10px;
+}
+/* style the logo */
+.center {
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+	margin-bottom: 25px;
+   	width: 237px;
+	height: 110px;
+}
+
+/* style the navigation bar */
+.nav {
+	list-style-type: none;
+	margin: auto;
+	width: 1000px;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+/* style the navigation links */
+.nav a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+}
+
+/* add hover color over links */
+.nav a:hover {
+	background-color: #696969;
+}
+
+/* add column to separate picture and text */
+.leftColumn {
+	float: left;
+	width: 50%;
+}
+
+/* add right column */
+.rightColumn {
+	float: left;
+	width: 50%;
+}
+
+/* create container for the picture column */
+.columnContainer {
+	width: 1000px;
+	margin: 50px auto;
+}
+
+/* column for smaller pictures */
+.columnQuarter{
+	float: left;
+	margin-left 10px;
+}
+
+/* add rows for the smaller pictures */
+.row {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* style preview image for big picture */
+.previewImage {
+	display: none;
+   	margin-left: 50px;
+}
+
+/* style smaller image */
+.thumbnail img {
+	opacity: 0.6;
+}
+
+/* add hover property over thumbnail */
+.active,
+.thumbnail img:hover {
+	opacity: 1;
+	border: 2px solid #333;
+}
+
+/* add cursor property to thumbnails */
+.cursor {
+	cursor: pointer;
+}
+
+/* style add to cart button */
+.addToCartButton {
+	background: url(./assets/button-add-to-cart.png); 
+	cursor: pointer;
+	margin-top: 20px;
+	width: 150px; 
+	height: 41px; 
+}
+
+/* style expand button */
+.expandButtonClosed {
+	background: url(./assets/arrow-collapsed.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	width: 100%;
+	cursor: pointer;
+	border: none;
+	text-align: left;
+	font-size: 18px;
+	margin: 10px;
+}
+
+/* style the desctiption section for the collapsable arrows */
+.desciptionSection {
+	padding: 0 18px;
+	border: none;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+/* style picture for expanded section */
+.expandButtonClosed:after {
+	background: url(./assets/arrow-collapsed.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	float: left;
+}
+
+/* set active expand */
+.activeExpand {
+	background: url(./assets/arrow-expanded.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+/* add border lines above and below the expand columns */
+.expandBorder {
+	margin: 20px;
+	border-style: solid none solid none;
+	border-width: 2px;
+}
+
+/* style header*/
+h {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/* style lists */
+li {
+	text-indent: 5%;
+}
+
+/* add footer styles */
+.footerBar {
+	border-style: solid none none none;
+	border-width: 1px;
+	background-color: #d9d9d9;
+	list-style-type: none;
+	margin: auto;
+	width: 1000px;
+	padding: 10px 10px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.footerBar a {
+	text-decoration: none;
+	color: black;
+}
+
+/* add website navigation bar */
+.websiteNavigation {
+	overflow: hidden;
+	width: 1000px;
+	margin: 10px auto;
+	list-style-type: none;
+	padding: 0;
+}
+
+.websiteNavigation a {
+	text-decoration: none;
+	padding: 5px 5px;
+	color: black;
+}
